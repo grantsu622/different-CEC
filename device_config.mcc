@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration device="PIC16F1782" mcc_version="v2.25.2">
+    <managers>
+        <manager generated="true" name="Pin Manager" reloadPin="manual">
+            <setting name="SDISEL" option="RC4"/>
+            <setting name="C2OUTSEL" option="RA5"/>
+            <setting name="RXSEL" option="RC7"/>
+            <setting name="SDOSEL" option="RC5"/>
+            <setting name="SCKSEL" option="RC3"/>
+            <setting name="CCP1SEL" option="RC2"/>
+            <setting name="CCP2SEL" option="RC1"/>
+            <setting name="TXSEL" option="RC6"/>
+            <setting name="package" option="PDIP28"/>
+            <setting name="sorting" option="true"/>
+            <file checksum="1063230888" modified="false" name="pin_manager_1.c" path="mcc_generated_files/pin_manager_1.c"/>
+            <file checksum="1961293689" modified="false" name="pin_manager_1.h" path="mcc_generated_files/pin_manager_1.h"/>
+        </manager>
+        <manager generated="true" name="System" reloadPin="manual">
+            <initializer comment="" name="Initialize">
+                <setting name="SCS" option="INTOSC" register="OSCCON"/>
+                <setting name="SPLLEN" option="disabled" register="OSCCON"/>
+                <setting name="IRCF" option="16MHz_HF" register="OSCCON"/>
+                <setting name="LFIOFR" option="disabled" register="OSCSTAT"/>
+                <setting name="HFIOFL" option="not2percent_acc" register="OSCSTAT"/>
+                <setting name="OSTS" option="intosc" register="OSCSTAT"/>
+                <setting name="PLLR" option="disabled" register="OSCSTAT"/>
+                <setting name="HFIOFS" option="not0.5percent_acc" register="OSCSTAT"/>
+                <setting name="HFIOFR" option="disabled" register="OSCSTAT"/>
+                <setting name="MFIOFR" option="disabled" register="OSCSTAT"/>
+                <setting name="T1OSCR" option="disabled" register="OSCSTAT"/>
+                <setting name="TUN" option="0x0" register="OSCTUNE"/>
+                <additionalSetting name="pllMultiplier" option=""/>
+                <additionalSetting name="extclk" option="1.0 MHz"/>
+            </initializer>
+            <setting name="CLKOUTEN" option="OFF"/>
+            <setting name="FCMEN" option="ON"/>
+            <setting name="MCLRE" option="ON"/>
+            <setting name="WDTE" option="OFF"/>
+            <setting name="CPD" option="OFF"/>
+            <setting name="FOSC" option="INTOSC"/>
+            <setting name="BOREN" option="ON"/>
+            <setting name="IESO" option="ON"/>
+            <setting name="PWRTE" option="OFF"/>
+            <setting name="CP" option="OFF"/>
+            <setting name="PLLEN" option="ON"/>
+            <setting name="LPBOR" option="OFF"/>
+            <setting name="LVP" option="OFF"/>
+            <setting name="WRT" option="OFF"/>
+            <setting name="VCAPEN" option="OFF"/>
+            <setting name="STVREN" option="ON"/>
+            <setting name="BORV" option="LO"/>
+            <setting name="generateConfigBits" option="true"/>
+            <file checksum="3854045261" modified="false" name="mcc_1.c" path="mcc_generated_files/mcc_1.c"/>
+            <file checksum="206442904" modified="false" name="mcc_1.h" path="mcc_generated_files/mcc_1.h"/>
+        </manager>
+    </managers>
+    <modules>
+        <module generated="true" mode="Memory" name="MEMORY" order="0" reloadPin="manual" type="nvm">
+            <setting name="useEE" option="true"/>
+            <file checksum="2294052418" modified="false" name="memory.c" path="mcc_generated_files/memory.c"/>
+            <file checksum="135886754" modified="false" name="memory.h" path="mcc_generated_files/memory.h"/>
+        </module>
+    </modules>
+</configuration>
